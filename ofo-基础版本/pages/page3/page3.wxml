@@ -1,0 +1,7 @@
+<view class="c">
+
+  <button bindtap="4444">这是第5个页面</button>
+
+ 
+
+</view>

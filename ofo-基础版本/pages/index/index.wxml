@@ -1,0 +1,54 @@
+<!-- 注释： 给我们看的，计算机不看 -->
+<!--index.wxml-->
+
+<!-- view 代表定义了一个盒子（容器），装东西的
+      <view> 开始 ， 以 </view> 结束， 里面的就是盒子里面的东西
+
+
+编码：
+    计算机，是不是 都是些电路，电子元件。 问题来了，怎么可以显示 符号(a,b,c,...)呢？
+	计算机可以存数字的
+	    规定：  1-> a, 2->b ...  所有的英文符号都规定下来   （ASCII编码）
+		中国规定： 1-> 我 2->的 ... 所有的中文符号也能规定下来 (GB2312）
+		全球规定： 1->a 2-> 我 3-> ...  所有的世界符号都规定下来了 (UTF-8)
+
+    1. 看到地图的部分
+    2. 18
+    3. 乱码 
+    4. {{a}}
+
+  -->
+
+<!--  class="c" 代表将样式c作用在盒子上面 -->
+<view class="c">
+
+  <button bindtap="1111">跳转至第二个页面</button>
+
+  <!-- longitude 经度值
+       latitude 纬度值
+       scale 缩放级别
+
+
+       {{a}} 代表提取 js 中数据属性中的 a 的值
+             两边的 {{ }} 这个是格式，必须写上去
+
+             
+    longitude="113.324520" 
+    latitude="23.099994" 
+
+    bindcontroltap="controltap"
+    bindcontroltap微信定义的用于配置点击控件时的处理函数
+   -->
+  <map 
+    class="a"    
+    longitude="113.324520"  
+    latitude="23.099994"
+    scale="{{a}}"
+    controls = "{{control}}"
+    markers = "{{markers}}"
+
+    bindcontroltap="controltap"
+    > </map>
+
+</view>
+

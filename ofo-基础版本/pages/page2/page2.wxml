@@ -1,0 +1,7 @@
+<view class="c">
+
+  <button bindtap="3333">跳转至第4个页面</button>
+
+ 
+
+</view>
