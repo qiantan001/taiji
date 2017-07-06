@@ -1,11 +1,10 @@
 
 Page({
 
-  taiji: function (context) {
+  taiji: function (context,x,y) {
 
-    var x = parseInt(Math.random() * 350);
-    var y = parseInt(Math.random() * 500);
-    var r = parseInt(Math.random() * 100);
+    
+    var r = 100;
     var y1 = y-(r/2);
     var y2 = y+(r/2);
     //太极图
@@ -51,7 +50,9 @@ Page({
     var context = wx.createCanvasContext('canvas1')
     for(var i=0;i<=4;i++){
 
-      this.taiji(context);
+      var x = parseInt(Math.random() * 300);
+      var y = parseInt(Math.random() * 500);
+      this.taiji(context,x,y);
 
     }
 
